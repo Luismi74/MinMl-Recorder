@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MinMl Recorder</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcdn.com/1.1.4/tailwind.min.css" >
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="render.js"></script>
+  </head>
+  <body class="bg-teal-100 h-full text-gray-600 flex flex-col">
+    <div class="h-12 bg-gray-900 flex items-center justify-between shadow">
+      <div class="px-4">
+        <!--logo-->
+        <img class="px-1 py-1 m-1" src="assets/min-white.png" >
+      </div>
+      <div class="flex items-center px-4">
+        
+        <!-- close button here-->
+        <div class="ml-2"><img src="assets/close.png" alt="" class="h-4" id="screenerExit"/></div>
+      </div>
+    </div>
+
+<!--side menu-->
+<div class="flex flex-1">
+      <div class="bg-gray-800 p-6 w-64">
+        <ul>
+          <li>
+            <a href="index.html" class="flex items-center px-1 py-1 my-3 rounded hover:bg-gray-900 hover:text-blue-400">
+              <span class="ml-2" id="sidemenu">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="information.html" class="flex items-center px-1 py-1 my-3 rounded hover:bg-gray-900 hover:text-blue-400 bg-gray-900 text-blue-400">
+              <span class="ml-2" id="sidemenu">Information</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex-1">
+        <div class="p-8">
+          <h1 class="text-2xl text-gray-800"></h1>
+    
+                <!--video container-->
+        <div class="container mx-auto px-6 py-6 text-center">
+
+          <!--video tag here-->
+          <div class="max-w-full rounded shadow-lg bg-white-400">
+
+            <div class="content-center">
+              <video class="py-24 mx-auto" id="videoSelect"></video>
+            </div>
+          </div>
+
+          <button id="videoSelectBtn" class="text-blue-800 py-4">
+            Choose a Video Source
+          </button>
+          <!--Nested Buttons-->
+            <div class="h-2 mt-2">
+                  <button id="startBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-6 rounded-full">  Start   </button>
+                  <button id="stopBtn" class="bg-red-600 hover:bg-red-900 text-white font-bold py-1 px-6 rounded-full">   Stop    </button>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
