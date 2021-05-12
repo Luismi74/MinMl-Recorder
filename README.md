@@ -4,7 +4,7 @@
 
 
 # MinMl-Recorder
-Minimal Windows Recorder built with Electron.js
+Windows Screen Recorder built with Electron.js
 
 
 
